@@ -1,0 +1,39 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+  z-index: 1;
+
+  .round-1 {
+    max-width: 200px;
+    left: -352px;
+    top: -10px;
+    img {
+      width: 100%;
+    }
+  }
+  .round-2 {
+    right: -341px;
+    top: 304px;
+    max-width: 171px;
+    img {
+      width: 100%;
+    }
+  }
+  .round-3 {
+    right: -304px;
+    max-width: 200px;
+    bottom: 182px;
+    img {
+      width: 100%;
+    }
+  }
+  .round-4 {
+    left: -362px;
+    max-width: 156px;
+    img {
+      width: 100%;
+    }
+  }
+}

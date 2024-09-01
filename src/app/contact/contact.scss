@@ -1,0 +1,120 @@
+.contact-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  .contact-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .contact-description {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .circle1 {
+    top: -10px;
+    left: -240px;
+    max-width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .inputfields-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    .top-inputs-container {
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 50px;
+      max-width: 600px;
+      width: 100%;
+
+      .first-3-inputs,
+      .second-2-inputs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        max-width: 300px;
+        width: 100%;
+      }
+
+      .message {
+        .field {
+          max-width: 600px;
+          max-height: 55px;
+        }
+      }
+    }
+
+    .field {
+      max-width: 600px;
+      max-height: 55px;
+
+      input {
+        border: 2px solid #00c2ff;
+        border-radius: 30.5px;
+        height: 100%;
+        width: 100%;
+        padding: 10px 23px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .turtle {
+    position: absolute;
+    z-index: 1;
+    right: -174px;
+    bottom: 0;
+    max-width: 310px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .circle2 {
+    max-width: 370px;
+    position: absolute;
+    z-index: 0;
+    right: -180px;
+    bottom: -3px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .contact-btn {
+    padding: 40px 0;
+    max-width: 200px;
+
+    button {
+      font-size: 20px;
+      font-weight: 500;
+      width: 100%;
+    }
+  }
+
+  .circle3 {
+    left: 300px;
+    bottom: -122px;
+    max-width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

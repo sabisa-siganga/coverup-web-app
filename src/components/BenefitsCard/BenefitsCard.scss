@@ -1,0 +1,32 @@
+.benefits-card-container {
+  max-width: 193px;
+  min-height: 475px;
+  // box-shadow: 1px 1px 5px rgb(233, 233, 233);
+
+  .benefit-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    img {
+      width: 68px;
+      height: 68px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .benefit-scheme-title {
+    font-size: 19px;
+    padding: 10px 10px;
+    font-weight: 500;
+    color: #4ccef7;
+    height: 50px;
+  }
+
+  .benefit-description {
+    font-size: 14px;
+    padding: 0 15px 15px;
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,122 @@
+.cover-container {
+  .cover-header-container {
+    top: 0;
+    bottom: unset;
+    margin-top: 0;
+
+    > div {
+      border-radius: 0 0 29px 29px;
+      background: #2c9fc3;
+      text-align: center;
+    }
+
+    .cover-title {
+      font-size: 45px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 52px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+
+  .cover-step-no {
+    margin: 50px auto 20px;
+  }
+
+  .options-filter-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    row-gap: 80px;
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      .search-input-field {
+        max-width: 330px;
+        width: 100%;
+
+        input {
+          font-size: 15px;
+          font-weight: 400;
+          padding: 10px 15px;
+          border-right: none;
+          border-radius: 5px 0 0 5px;
+          width: 100%;
+          height: 100%;
+          padding-left: 15px;
+          border: 2px solid #4ccef7;
+        }
+      }
+      .btn {
+        margin: 0;
+        border-radius: 0 5px 5px 0;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 110px;
+      }
+    }
+
+    .policy-cards-container {
+      @apply flex flex-col items-center gap-8 pb-10;
+    }
+    
+    .no-match {
+      font-size: 15px;
+      font-weight: 500;
+      color: #000;
+    }
+    
+    .green {
+      background: #a4e58c;
+    }
+    .green .single-card {
+      border-color: #7ca265; /* Darker green */
+    }
+    
+    .blue {
+      background: #8cbaff;
+    }
+    .blue .single-card {
+      border-color: #6891d1; /* Darker blue */
+    }
+    
+    .lime {
+      background: #a1dd8c;
+    }
+    .lime .single-card {
+      border-color: #7bb164; /* Darker lime */
+    }
+    
+    .red {
+      background: #d98d8d;
+    }
+    .red .single-card {
+      border-color: #b26666; /* Darker red */
+    }
+    
+    .single-card {
+      @apply w-[600px] h-[131px] p-4 grid grid-cols-2 border border-2 rounded-lg shadow-md;
+
+      border-radius: 1.5rem;
+    }
+    
+    .list-text > div {
+      font-size: 17px;
+      font-weight: 500;
+      color: #fff;
+    }
+    
+    img {
+      @apply w-auto h-[35px] object-contain;
+    }
+    
+  }
+}

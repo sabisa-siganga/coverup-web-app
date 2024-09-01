@@ -1,0 +1,33 @@
+.help-items-container {
+  margin-left: 30px;
+  .help-item {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    margin-bottom: 25px;
+    font-size: 19px;
+    font-weight: 500;
+
+    span {
+      font-weight: 600;
+      color: #4ccef7;
+    }
+
+    .help-label {
+      margin-top: 3px;
+
+      .help-check {
+        border-radius: 50%;
+        background: #4ccef7;
+
+        svg {
+          fill: #fff !important;
+        }
+      }
+    }
+
+    .item {
+      font-size: 19px;
+    }
+  }
+}

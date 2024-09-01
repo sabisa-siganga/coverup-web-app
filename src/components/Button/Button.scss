@@ -1,0 +1,50 @@
+.btn {
+  border-radius: 30.5px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 204px;
+  // max-height: 40px;
+  padding: 6.5px 15px;
+  transition: background-color 0.2s ease-in-out;
+  overflow: hidden;
+
+  &.btn-primary {
+    background-color: #21a7d2;
+
+    &:hover {
+      background-color: #209ec7;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: #4ccef7;
+
+    &:hover {
+      background-color: #64cced;
+    }
+  }
+
+  .loader-icon-container {
+    height: 100%;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    .loader-icon {
+      margin-right: 0;
+      animation: spin 1s linear infinite; // add spinning animation
+      height: 100%;
+      width: auto;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

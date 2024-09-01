@@ -1,0 +1,48 @@
+.checkbox-label {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .input-field-container {
+    height: 18px;
+    margin-right: 10px;
+    width: 18px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    input {
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
+
+    .check-icon {
+      border-radius: 3px;
+      padding: 2px;
+      transition: border 0.1s ease-in-out;
+      border: 1px solid #00c2ff;
+
+      svg {
+        transition: fill 0.2s ease-in-out;
+        height: auto;
+        fill: transparent;
+        width: 100%;
+      }
+    }
+
+    input:checked ~ .check-icon {
+      border: 2px solid #00c2ff;
+
+      svg {
+        fill: #00c2ff;
+      }
+    }
+  }
+}

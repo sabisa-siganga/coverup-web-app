@@ -1,0 +1,139 @@
+.quote-cont {
+  padding: 0 90px 0px;
+  position: relative;
+  overflow: hidden;
+
+  .waving-turtle {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    bottom: -20px;
+  }
+
+  .quote-step-no {
+    margin: 50px auto 50px;
+  }
+
+  > div {
+    padding-left: 65px;
+  }
+
+  .quote-first-text {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    span {
+      color: #21a7d1;
+    }
+  }
+
+  .elipse10 {
+    max-width: 223px;
+    left: -123px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .assurity-text {
+    font-size: 20px !important;
+    margin-bottom: 45px;
+    font-weight: 500;
+  }
+
+  .quotation-hero {
+    .label-container {
+      form {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .quote-input {
+          max-width: 295px;
+          width: 100%;
+          height: 60px;
+          margin-bottom: 0;
+
+          input {
+            max-width: 500px;
+            height: 100%;
+            border: 2px solid #21a7d1;
+            border-radius: 30.5px 0 0 30.5px;
+            border-right: none;
+            margin-right: 0;
+            margin-bottom: 0;
+            font-size: 18px;
+            background: #fff;
+            font-weight: 400;
+            width: 100%;
+            padding: 17px 20px;
+          }
+          .error-message {
+            color: #ff3333;
+            padding: 2px 0 0px;
+            font-size: 15px;
+          }
+        }
+        .btn {
+          width: 196px;
+          height: 60px;
+          border-radius: 30.5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 19px;
+          font-weight: 600;
+          border-left: none;
+          margin: 0;
+          padding: 0;
+          background-color: #21a7d1;
+          margin-left: -33px;
+          text-transform: uppercase;
+        }
+      }
+
+      .quotation-paragraphs {
+        font-size: 19px;
+        margin-bottom: 35px;
+        font-weight: 500;
+
+        .paragraph1 {
+          margin-bottom: 10px;
+          span {
+            color: #21a7d1;
+          }
+        }
+
+        .paragraph2 {
+        }
+      }
+      .elipse11 {
+        bottom: -234px;
+        right: 390px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .elipse12 {
+        top: 62px;
+        right: -81px;
+        max-width: 234px;
+        position: absolute;
+        z-index: -1;
+        img {
+          width: 100%;
+        }
+      }
+
+      .features-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        // color: #4ccef7;
+      }
+    }
+  }
+}

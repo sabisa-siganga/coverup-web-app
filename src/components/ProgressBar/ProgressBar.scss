@@ -1,0 +1,56 @@
+.progress-step-bar {
+  max-width: max-content;
+  margin: 25px auto 40px;
+
+  .step-items-list {
+    column-gap: 20px;
+  }
+
+  .step-item {
+    @apply relative flex flex-col justify-center items-center w-36;
+
+    > p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #4a4949;
+    }
+  }
+
+  .step-item:not(:first-child):before {
+    @apply content-[''] absolute w-full h-[3px]  translate-y-2/4;
+    right: 55%;
+    top: 28.333333%;
+    background-color: rgb(0 0 0 / 30%);
+  }
+
+  .step {
+    @apply items-center flex justify-center z-10 relative  rounded-full font-semibold text-white;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: #ababab;
+  }
+
+  .active {
+    .step {
+      background-color: #21a7d1;
+    }
+
+    > p {
+      color: #000;
+    }
+  }
+
+  .completed {
+    &.step-item:not(:first-child):before {
+      background-color: #21a7d1;
+    }
+
+    .step {
+      background-color: #21a7d1;
+    }
+
+    > p {
+      color: #000;
+    }
+  }
+}

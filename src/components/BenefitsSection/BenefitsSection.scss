@@ -1,0 +1,197 @@
+.benefits-section-container {
+  background: #f0f0f0;
+  margin-top: -90px;
+  overflow: hidden;
+
+  .why-section {
+    display: flex;
+    max-width: 1175px;
+    column-gap: 25px;
+    padding: 97px 0;
+    margin: 0 0 auto auto;
+
+    .burial-text {
+      flex: 0 0 48%;
+
+      .why-heading {
+        font-size: 28px;
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 50px;
+        color: #11556b;
+        text-transform: uppercase;
+      }
+
+      .why-description {
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #4ccef7;
+      }
+
+      .elipse7 {
+        left: -105px;
+        max-width: 171px;
+        margin-top: 38px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .list-benefit-cont {
+        margin-left: 0;
+      }
+
+      .why-item {
+        list-style-type: circle;
+        margin-bottom: 25px;
+        font-size: 15px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .burialimage-pat-container {
+      margin-left: 93px;
+
+      .pat-img-cont {
+        max-width: 500px;
+        height: 172px;
+        position: relative;
+
+        .half-pat-image {
+          height: auto;
+          width: 100%;
+          margin-right: -80px;
+        }
+      }
+
+      .burial-img-cont {
+        flex: 1;
+        justify-content: flex-end;
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        margin-top: -90px;
+
+        .whyscheme-img {
+          width: 445px;
+          height: auto;
+          object-fit: contain;
+          object-position: center;
+          margin-left: 145px;
+        }
+      }
+
+      .elipse8 {
+        margin-top: 326px;
+        max-width: 200px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .scheme-info-section {
+    background: #fff;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 13px;
+
+    .burial-scheme-heading {
+      font-size: 28px;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 106px;
+      color: #11556b;
+      text-transform: uppercase;
+    }
+
+    .info-pat-con {
+      .pat-background-cont {
+        position: absolute;
+        margin-top: -70px;
+        margin-right: -40px;
+        padding-bottom: 10px;
+
+        .wholepat-img {
+          width: 100%;
+          margin-right: 75px;
+          height: 480px;
+        }
+      }
+      .scheme-items {
+        display: flex;
+        max-width: 1168px !important;
+        margin: 0 auto 90px;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        align-items: center;
+        margin-bottom: 90px;
+        position: relative;
+        z-index: 1;
+
+        .scheme-list {
+          max-width: 277px !important;
+          min-height: 499px !important;
+          border-radius: 30px;
+          padding: 20px;
+          background: #fff;
+
+          .scheme-card-title {
+            font-size: 19px;
+            padding: 10px 11px;
+            font-weight: 600;
+            color: #4ccef7;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.we-help-container {
+  background: #f0f0f0;
+  padding: 50px;
+}
+
+.outer-benefit-items {
+  background: #fff;
+  padding: 0;
+
+  .benefits-heading {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding: 56px 0;
+    margin-bottom: 30px;
+    color: #11556b;
+    text-transform: uppercase;
+  }
+
+  .benefits-items-container {
+    padding: 0 60px 60px;
+
+    .benefits-items {
+      display: flex;
+      margin: 0 auto;
+      column-gap: 25px;
+      justify-content: space-between;
+
+      .benefit-list {
+        min-height: 323px !important;
+        border-radius: 30px;
+        background: #fff;
+        flex: 1;
+        max-width: 100%;
+      }
+    }
+  }
+}
