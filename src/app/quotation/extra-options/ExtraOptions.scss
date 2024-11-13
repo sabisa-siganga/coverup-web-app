@@ -46,7 +46,7 @@
 
     form {
       .checkboxes-container {
-        border: 2px solid #21a7d1;
+        border: 2px solid #00c2ff;
         max-width: 1000px;
         width: 100%;
         min-height: 100px;
@@ -69,6 +69,12 @@
           .item-name {
             flex: 0 0 32%;
             padding: 10px;
+
+            .checkbox-label {
+              .input-field-container {
+                margin-bottom: 0;
+              }
+            }
           }
           .label-style {
             color: #757575;
@@ -110,7 +116,7 @@
           min-height: 40px;
           height: 100%;
           border-radius: 30.5px;
-          background: #21a7d1;
+          background: #00c2ff;
           font-size: 19px;
           display: flex;
           justify-content: center;

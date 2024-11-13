@@ -3,7 +3,7 @@ import "./InputField.scss";
 import { FieldErrors } from "react-hook-form";
 
 interface InputFieldProps {
-  type: "text" | "number" | "date" | "email" | "tel";
+  type: "text" | "number" | "date" | "email" | "tel" | "password";
   value?: string | number;
   name: string;
   id?: string;
@@ -14,6 +14,7 @@ interface InputFieldProps {
   errors?: FieldErrors;
   pattern?: string;
   defaultValue?: string;
+  showText?: boolean;
 }
 
 const Input = (
@@ -32,6 +33,7 @@ const Input = (
     placeholder,
     pattern,
     defaultValue,
+    showText = false,
   } = props;
 
   const error = errors && errors[name];
@@ -40,19 +42,25 @@ const Input = (
     <div className={`input-field-container ${className}`}>
       {label && <label htmlFor={id}>{label}</label>}
 
-      <input
-        ref={ref}
-        type={type}
-        name={name}
-        pattern={pattern}
-        onChange={onChange}
-        value={value}
-        id={id}
-        placeholder={placeholder}
-        defaultValue={defaultValue}
-      />
+      <div className="input-error-cont">
+        {!showText && (
+          <input
+            ref={ref}
+            type={type}
+            name={name}
+            pattern={pattern}
+            onChange={onChange}
+            value={value}
+            id={id}
+            placeholder={placeholder}
+            defaultValue={defaultValue}
+          />
+        )}
 
-      {error && <p className="error-message">{error.message?.toString()}</p>}
+        {showText && <div>{defaultValue}</div>}
+
+        {error && <p className="error-message">{error.message?.toString()}</p>}
+      </div>
     </div>
   );
 };

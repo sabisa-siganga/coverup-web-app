@@ -36,4 +36,41 @@
       width: 100%;
     }
   }
+
+  @media (max-width: 840px) {
+    padding: 40px 30px 20px;
+
+    .about-title {
+      font-size: 22px;
+    }
+
+    .about-description {
+      font-size: 18px;
+      line-height: 32.1px;
+      letter-spacing: 0.4px;
+
+      ul {
+        li {
+          font-size: 18px;
+          line-height: 32.1px;
+          letter-spacing: 0.4px;
+
+          strong {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 358px) {
+    padding: 20px 25px 20px;
+
+    .about-title {
+      font-size: 20px;
+    }
+    .about-description {
+      font-size: 17px;
+    }
+  }
 }

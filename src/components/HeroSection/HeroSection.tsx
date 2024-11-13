@@ -4,7 +4,6 @@ import React from "react";
 import "./HeroSection.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import BenefitsSection from "../BenefitsSection/BenefitsSection";
 import ListItemsSection from "../ListItemsSection/ListItemsSection";
 import BlueCircles from "../BlueCircles/BlueCircles";
@@ -52,16 +51,15 @@ const HeroSection = () => {
         <div className="first-hero-section">
           <div className="paragraph-container">
             <p className="scheme-text">
-              Cover<span>Up</span> will protect your family&apos;s future with
-              the right burial scheme and ensure everything is taken care of
-              when it matters most
+              Cover<span>Up</span> secures your family with the right burial
+              plan when it matters most.
             </p>
           </div>
 
           <div className="second-section-hero">
             <div className="secimage-list-cont">
               <Image
-                src="/hero/familia.jpg"
+                src="/hero/home-image1.jpg"
                 alt="hero-image"
                 width={400}
                 height={100}
@@ -75,17 +73,14 @@ const HeroSection = () => {
                   <p className="steps-text">Plan Ahead, Live Without Worry</p>
                 </div>
                 <div className="hero-btn-cont">
-                  <Link className="btn" href="/quotation" passHref>
+                  <Link className="btn" href="/#" passHref>
                     Start your comparison
-                    <span>
-                      <IoIosArrowRoundForward />
-                    </span>
                   </Link>
                 </div>
               </div>
             </div>
 
-            <BlueCircles className="elipse3" />
+            {/* <BlueCircles className="elipse3" /> */}
           </div>
         </div>
       </div>
@@ -124,13 +119,13 @@ const HeroSection = () => {
 
         <div className="feature-container">
           <div className="elipse-image-container">
-            <Image
+            {/* <Image
               src="/assets/half-pat.svg"
               alt="pat-bg"
               width={300}
               height={100}
               className="pat-photo"
-            ></Image>
+            ></Image> */}
 
             <BlueCircles className="elipse5" />
 

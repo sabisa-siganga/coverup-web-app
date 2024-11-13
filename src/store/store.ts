@@ -2,12 +2,14 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { createWrapper } from "next-redux-wrapper";
 import idNumberReducer from "./slices/idNumberSlice";
 import userDataReducer from "./slices/userDetailsSlice";
+import parlourInfoReducer from "./slices/parlourSlice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from "redux-persist";
 
 const rootReducer = combineReducers({
   idNumber: idNumberReducer,
   userData: userDataReducer,
+  parlourInfo: parlourInfoReducer,
 });
 
 const persistConfig = {

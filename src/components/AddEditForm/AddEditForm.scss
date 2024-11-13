@@ -1,0 +1,227 @@
+.manage-form-container {
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+
+  .elipse1 {
+    left: -74px;
+    top: 20px;
+    max-width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .elipse2 {
+    right: -29px;
+    top: 301px;
+    max-width: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .elipse3 {
+    left: -54px;
+    bottom: -5px;
+    max-width: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    padding: 30px 30px 50px;
+    box-shadow: 1px 1px 7px #adadad;
+    background: #ede0ed38;
+
+    .form-title {
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .form-subtitle {
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .fields-container {
+      max-width: 800px;
+      margin: 0 auto;
+
+      .legal-section-title {
+        font-size: 17px;
+        font-weight: 500;
+        color: #fff;
+        background: #00c2ff;
+        box-shadow: 1px 1px 5px #8d8888;
+        border-radius: 27px;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0 70px;
+        text-transform: uppercase;
+        padding-left: 20px;
+      }
+
+      .parlour-field {
+        display: flex;
+        column-gap: 20px;
+        justify-content: space-between;
+
+        label {
+          font-size: 18px;
+          font-weight: 400;
+          text-align: start;
+          padding-left: 20px;
+
+          &:after {
+            color: #da0830;
+            content: "*";
+            font-size: 18px;
+            margin-left: 3px;
+            font-weight: 600;
+            vertical-align: sub;
+          }
+        }
+
+        input,
+        select {
+          font-size: 17px;
+          max-width: 400px;
+          width: 100%;
+          max-height: 40px;
+          border: 1px solid #00c2ff;
+          border-radius: 27px;
+        }
+
+        .error-message {
+          color: #da0530;
+          font-size: 15px;
+          padding: 0px 0 0px 2px;
+        }
+      }
+
+      .select-style {
+        margin-bottom: 30px;
+      }
+
+      .doc-upload-cont {
+        max-width: 800px;
+        margin: 0px auto 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .doc-label {
+          padding-left: 20px;
+
+          &:after {
+            opacity: 0 !important;
+          }
+        }
+
+        .doc-uploading {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          column-gap: 20px;
+          align-items: center;
+
+          a {
+            svg {
+              fill: #00c2ff;
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+
+      .no-star {
+        label {
+          font-weight: 500;
+          color: #000;
+          &:after {
+            opacity: 0 !important;
+          }
+        }
+        > div {
+          font-weight: 300;
+          font-size: 18px;
+          max-width: 400px;
+          width: 100%;
+        }
+      }
+    }
+
+    .form-buttons {
+      display: flex;
+      column-gap: 30px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 50px 0 30px;
+
+      button,
+      a {
+        max-width: 200px;
+        font-size: 18px;
+      }
+
+      a {
+        background-color: #00c2ff;
+        border-radius: 30.5px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        transition: background-color 0.2s ease-in-out;
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+
+    .doc-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .title {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: start;
+        padding-left: 20px;
+
+        &:after {
+          color: #da0830;
+          content: "*";
+          font-size: 18px;
+          margin-left: 3px;
+          font-weight: 600;
+          vertical-align: sub;
+        }
+      }
+
+      button {
+        max-width: 200px;
+        font-size: 18px;
+      }
+    }
+  }
+}

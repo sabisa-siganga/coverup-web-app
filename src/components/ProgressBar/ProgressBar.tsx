@@ -15,7 +15,7 @@ const steps = [
   "Policy Details ",
   "Select Extras",
   "Cover Options",
-  "Payment",
+  // "Payment",
 ];
 
 const ProgressBar = (props: Props) => {

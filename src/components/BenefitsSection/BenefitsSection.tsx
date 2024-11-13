@@ -113,7 +113,7 @@ const BenefitsSection = () => {
           </div>
 
           <div className="burialimage-pat-container">
-            <div className="pat-img-cont">
+            {/* <div className="pat-img-cont">
               <Image
                 src="/assets/half-pat.svg"
                 width={100}
@@ -121,7 +121,7 @@ const BenefitsSection = () => {
                 alt="pat-img"
                 className="half-pat-image"
               />
-            </div>
+            </div> */}
             <div className="burial-img-cont">
               <Image
                 src="/hero/scheme.svg"
@@ -141,7 +141,7 @@ const BenefitsSection = () => {
           </div>
 
           <div className="info-pat-con">
-            <div className="pat-background-cont">
+            {/* <div className="pat-background-cont">
               <Image
                 src="/assets/whole-pat.svg"
                 width={100}
@@ -149,7 +149,7 @@ const BenefitsSection = () => {
                 alt="wholepat-img"
                 className="wholepat-img"
               />
-            </div>
+            </div> */}
 
             <div className="scheme-items">
               {schemeItems.map((data, index) => {

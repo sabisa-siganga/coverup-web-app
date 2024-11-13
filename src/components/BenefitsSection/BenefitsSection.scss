@@ -7,26 +7,26 @@
     display: flex;
     max-width: 1175px;
     column-gap: 25px;
-    padding: 97px 0;
+    padding: 75px 0 29px;
     margin: 0 0 auto auto;
 
     .burial-text {
       flex: 0 0 48%;
 
       .why-heading {
-        font-size: 28px;
+        font-size: 25px;
         text-align: left;
         font-weight: 600;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         color: #11556b;
         text-transform: uppercase;
       }
 
       .why-description {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         font-weight: 500;
-        font-size: 18px;
-        color: #4ccef7;
+        font-size: 20px;
+        color: #00c2ff;
       }
 
       .elipse7 {
@@ -75,7 +75,7 @@
         display: flex;
         position: absolute;
         z-index: 1;
-        margin-top: -90px;
+        margin-top: 95px;
 
         .whyscheme-img {
           width: 445px;
@@ -87,7 +87,7 @@
       }
 
       .elipse8 {
-        margin-top: 326px;
+        margin-top: 483px;
         max-width: 200px;
 
         img {
@@ -105,10 +105,10 @@
     padding-bottom: 13px;
 
     .burial-scheme-heading {
-      font-size: 28px;
+      font-size: 25px;
       text-align: center;
       font-weight: 600;
-      margin-bottom: 106px;
+      margin-bottom: 50px;
       color: #11556b;
       text-transform: uppercase;
     }
@@ -128,30 +128,108 @@
       }
       .scheme-items {
         display: flex;
-        max-width: 1168px !important;
-        margin: 0 auto 90px;
+        max-width: 1350px !important;
+        justify-content: center;
         flex-wrap: wrap;
         column-gap: 20px;
         align-items: center;
-        margin-bottom: 90px;
+        margin-bottom: 50px;
         position: relative;
         z-index: 1;
 
         .scheme-list {
+          min-height: 426px !important;
+          padding: 10px 20px;
+          height: 100%;
           max-width: 277px !important;
-          min-height: 499px !important;
           border-radius: 30px;
-          padding: 20px;
           background: #fff;
+          border: 2px solid #00c2ff;
+          box-shadow: none;
 
           .scheme-card-title {
             font-size: 19px;
             padding: 10px 11px;
-            font-weight: 600;
-            color: #4ccef7;
+            font-weight: 500;
+            color: #00c2ff;
             height: 90px;
+            text-align: center;
+          }
+
+          .benefit-description {
+            padding: 0 0 15px;
+            font-weight: 400;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 841px) and (max-width: 1280px) {
+    .scheme-info-section {
+      .info-pat-con {
+        .scheme-items {
+          gap: 40px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 840px) {
+    margin-top: 0;
+
+    .why-section {
+      padding: 75px 50px 58px 60px;
+
+      .burial-text {
+        flex: 0 0 81%;
+
+        .why-heading {
+          padding-top: 20px;
+        }
+
+        .elipse7 {
+          display: none;
+        }
+
+        .list-benefit-cont {
+          padding-left: 21px;
+        }
+      }
+
+      .burialimage-pat-container {
+        display: none;
+      }
+    }
+
+    .scheme-info-section {
+      .burial-scheme-heading {
+      }
+
+      .info-pat-con {
+        .scheme-items {
+          gap: 40px;
+          .scheme-list {
+            max-width: 342px !important;
+            min-height: 347px !important;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 745px) {
+    .why-section {
+      .burial-text {
+        .why-heading {
+          font-size: 21px !important;
+          text-align: center;
+        }
+      }
+    }
+
+    .scheme-info-section {
+      .burial-scheme-heading {
+        font-size: 21px !important;
       }
     }
   }
@@ -167,7 +245,7 @@
   padding: 0;
 
   .benefits-heading {
-    font-size: 28px;
+    font-size: 25px !important;
     font-weight: 600;
     text-align: center;
     padding: 56px 0;
@@ -177,13 +255,13 @@
   }
 
   .benefits-items-container {
-    padding: 0 60px 60px;
+    padding: 0 30px 30px;
 
     .benefits-items {
       display: flex;
-      margin: 0 auto;
+      max-width: 1310px;
       column-gap: 25px;
-      justify-content: space-between;
+      justify-content: center;
 
       .benefit-list {
         min-height: 323px !important;
@@ -191,6 +269,93 @@
         background: #fff;
         flex: 1;
         max-width: 100%;
+        border: 2px solid #00c2ff;
+        box-shadow: none;
+      }
+    }
+  }
+
+  @media (max-width: 1310px) {
+    .benefits-items-container {
+      .benefits-items {
+        flex-wrap: wrap;
+        row-gap: 35px;
+
+        .benefit-list {
+          flex: 0 0 25%;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 841px) and (max-width: 1280px) {
+    .benefits-items-container {
+      .benefits-items {
+        flex-wrap: wrap;
+
+        .benefits-list {
+          flex: 0 0 30%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 840px) {
+    .benefits-heading {
+      margin-bottom: 0;
+    }
+
+    .benefits-items-container {
+      max-width: 342px;
+      margin: 0 auto;
+
+      .benefits-items {
+        flex-wrap: wrap;
+        max-width: 625px;
+        gap: 40px;
+
+        .benefit-list {
+          flex: 0 0 45%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 745px) {
+    .benefits-heading {
+      font-size: 16px;
+      padding: 33px 0;
+    }
+
+    .we-help-container {
+      padding-inline: 30px;
+    }
+
+    .benefits-items-container {
+      .benefits-items {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
+
+        .benefit-list {
+          flex: 1;
+          min-height: 380px !important;
+
+          .benefit-image {
+            img {
+              width: 50px;
+              height: 50px;
+            }
+          }
+
+          .benefit-scheme-title {
+            font-size: 16px;
+            height: 60px;
+          }
+          .benefit-description {
+            font-size: 15px;
+          }
+        }
       }
     }
   }

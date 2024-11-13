@@ -12,6 +12,7 @@ import {
   submitIDRequest,
   submitIDSuccess,
   submitIDFailure,
+  submitDateOfBirth,
 } from "@/store/slices/idNumberSlice";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
@@ -47,6 +48,24 @@ const QuotationPage = () => {
     defaultValues: initialIdValue,
   });
 
+  const extractDOBFromID = (id: string) => {
+    // Extract the first 2 digits as the year
+    const year = id.substring(0, 2);
+    // Extract the next 2 digits as the month
+    const month = id.substring(2, 4);
+    // Extract the next 2 digits as the day
+    const day = id.substring(4, 6);
+
+    // Convert year to 4 digits (ID numbers issued from 1900s to 2000s)
+    const currentYear = new Date().getFullYear() % 100;
+    const fullYear = parseInt(year) <= currentYear ? `20${year}` : `19${year}`;
+
+    // Format the date in YYYY-MM-DD format
+    const formattedDOB = `${fullYear}-${month}-${day}`;
+
+    return formattedDOB;
+  };
+
   const onSubmit: SubmitHandler<FormIdData> = async (data) => {
     setIsLoading(true);
     // Dispatch request action
@@ -54,14 +73,20 @@ const QuotationPage = () => {
 
     try {
       // Make API call using axios
-      const response = await axios.get("/api/id-number", {
-        params: {
-          idNumber: data.idNumber,
-        },
-      });
+      // const response = await axios.get("/api/id-number", {
+      //   params: {
+      //     idNumber: data.idNumber,
+      //   },
+      // });
 
       // Dispatch success action with response data
-      dispatch(submitIDSuccess(response.data));
+      dispatch(
+        submitIDSuccess({
+          fullName: "",
+          idNumber: data.idNumber,
+          dateOfBirth: extractDOBFromID(data.idNumber),
+        })
+      );
 
       // Navigate to the next page
       router.push("/quotation/confirm-details");

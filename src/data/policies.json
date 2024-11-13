@@ -5,7 +5,9 @@
       "claim": "R15 000 per claim",
       "name": "AVBOB",
       "option": "Basic Cover",
-      "color": "lime"
+    "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones.",
+     "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
     },
     {
       "image": "/policies/avbob.png",
@@ -13,103 +15,12 @@
       "claim": "R20 000 per claim",
       "name": "AVBOB",
       "option": "Standard Cover",
-      "color": "lime"
-    },
-    {
-      "image": "/policies/avbob.png",
-      "monthlyPay": "299",
-      "claim": "R25 000 per claim",
-      "name": "AVBOB",
-      "option": "Standard Cover",
-      "color": "lime"
-    },
-    {
-      "image": "/policies/avbob.png",
-      "monthlyPay": "399",
-      "claim": "R30 000 per claim",
-      "name": "AVBOB",
-      "option": "Premium Cover",
-      "color": "lime"
-    },
-    {
-      "image": "/policies/avbob.png",
-      "monthlyPay": "400",
-      "claim": "R35 000 per claim",
-      "name": "AVBOB",
-      "option": "Premium Cover",
-      "color": "lime"
-    },
-    {
-      "image": "/policies/avbob.png",
-      "monthlyPay": "500",
-      "claim": "R40 000 per claim",
-      "name": "AVBOB",
-      "option": "Premium Cover",
-      "color": "lime"
-    },
-    {
-      "image": "/policies/clientele.png",
-      "monthlyPay": "100",
-      "claim": "R10 000 per claim",
-      "name": "Clientele",
-      "option": "Basic Cover",
-      "color": "blue"
-    },
-    {
-      "image": "/policies/clientele.png",
-      "monthlyPay": "199",
-      "claim": "R15 000 per claim",
-      "name": "Clientele",
-      "option": "Basic Cover",
-      "color": "blue"
-    },
-    {
-      "image": "/policies/clientele.png",
-      "monthlyPay": "299",
-      "claim": "R20 000 per claim",
-      "name": "Clientele",
-      "option": "Standard Cover",
-      "color": "blue"
-    },
-    {
-      "image": "/policies/clientele.png",
-      "monthlyPay": "399",
-      "claim": "R25 000 per claim",
-      "name": "Clientele",
-      "option": "Standard Cover",
-      "color": "blue"
-    },
-    {
-      "image": "/policies/clientele.png",
-      "monthlyPay": "400",
-      "claim": "R30 000 per claim",
-      "name": "Clientele",
-      "option": "Premium Cover",
-      "color": "blue"
-    },
-    {
-      "image": "/policies/clientele.png",
-      "monthlyPay": "500",
-      "claim": "R35 000 per claim",
-      "name": "Clientele",
-      "option": "Premium Cover",
-      "color": "blue"
-    },
-    {
-      "image": "/policies/oldmutual.png",
-      "monthlyPay": "100",
-      "claim": "R5 000 per claim",
-      "name": "Old Mutual",
-      "option": "Basic Cover",
-      "color": "green"
-    },
-    {
-      "image": "/policies/oldmutual.png",
-      "monthlyPay": "199",
-      "claim": "R10 000 per claim",
-      "name": "Old Mutual",
-      "option": "Basic Cover",
-      "color": "green"
+      "description":
+      "Standard Cover offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones.",
+      "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+
+  
+    
     },
     {
       "image": "/policies/oldmutual.png",
@@ -117,7 +28,11 @@
       "claim": "R15 000 per claim",
       "name": "Old Mutual",
       "option": "Standard Cover",
-      "color": "green"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones.",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
+    
     },
     {
       "image": "/policies/oldmutual.png",
@@ -125,7 +40,11 @@
       "claim": "R20 000 per claim",
       "name": "Old Mutual",
       "option": "Standard Cover",
-      "color": "green"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
+    
     },
     {
       "image": "/policies/oldmutual.png",
@@ -133,7 +52,10 @@
       "claim": "R25 000 per claim",
       "name": "Old Mutual",
       "option": "Premium Cover",
-      "color": "green"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
     },
     {
       "image": "/policies/oldmutual.png",
@@ -141,7 +63,10 @@
       "claim": "R30 000 per claim",
       "name": "Old Mutual",
       "option": "Premium Cover",
-      "color": "green"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
     },
     {
       "image": "/policies/assupol.png",
@@ -149,7 +74,10 @@
       "claim": "R20 000 per claim",
       "name": "Assupol",
       "option": "Basic Cover",
-      "color": "red"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
     },
     {
       "image": "/policies/assupol.png",
@@ -157,7 +85,10 @@
       "claim": "R25 000 per claim",
       "name": "Assupol",
       "option": "Basic Cover",
-      "color": "red"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
     },
     {
       "image": "/policies/assupol.png",
@@ -165,7 +96,10 @@
       "claim": "R30 000 per claim",
       "name": "Assupol",
       "option": "Standard Cover",
-      "color": "red"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
     },
     {
       "image": "/policies/assupol.png",
@@ -173,7 +107,10 @@
       "claim": "R35 000 per claim",
       "name": "Assupol",
       "option": "Standard Cover",
-      "color": "red"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
     },
     {
       "image": "/policies/assupol.png",
@@ -181,7 +118,10 @@
       "claim": "R40 000 per claim",
       "name": "Assupol",
       "option": "Premium Cover",
-      "color": "red"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones.",
+           "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
+  
     },
     {
       "image": "/policies/assupol.png",
@@ -189,7 +129,9 @@
       "claim": "R45 000 per claim",
       "name": "Assupol",
       "option": "Premium Cover",
-      "color": "red"
+      "description":
+      "Basic Option offers comprehensive protection with extended benefits, ensuring peace of mind for you and your loved ones. ",
+               "benefits":"Enjoy priority services, higher coverage limits, and additional support tailored to your needs, providing unmatched security in any situation"
     }
     
   ]

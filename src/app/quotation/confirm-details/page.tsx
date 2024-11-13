@@ -23,7 +23,10 @@ import { RootState } from "@/store/store";
 import CheckBoxField from "@/components/CheckBox/CheckBox";
 import { updateUserField } from "@/store/slices/userDetailsSlice";
 import axios from "axios";
-import { submitIDSuccess } from "@/store/slices/idNumberSlice";
+import {
+  submitDateOfBirth,
+  submitIDSuccess,
+} from "@/store/slices/idNumberSlice";
 import BlueCircles from "@/components/BlueCircles/BlueCircles";
 
 interface FormData {
@@ -48,6 +51,9 @@ const regionSelect = {
   options: [
     {
       value: "Eastern Cape",
+    },
+    {
+      value: "Kwazulu Natal",
     },
     {
       value: "Free State",
@@ -132,7 +138,7 @@ const ConfirmDetails = () => {
   const { info } = useSelector((state: RootState) => state.userData);
 
   useEffect(() => {
-    if (!data.idNumber && !data.fullName && !data.dateOfBirth) {
+    if (!data.idNumber) {
       router.replace("/quotation");
     }
   }, [data, router]);
@@ -174,7 +180,7 @@ const ConfirmDetails = () => {
     },
   ]);
 
-  const [isEditing, setIsEditing] = useState(false);
+  const [isEditing, setIsEditing] = useState(true);
 
   const initalValues: PersonalDetailsFormData = {
     region: "",
@@ -247,7 +253,7 @@ const ConfirmDetails = () => {
       </p>
 
       <div className="pat-card-bg">
-        <div className="pat-bg">
+        {/* <div className="pat-bg">
           <Image
             src="/assets/whole-pat.svg"
             alt="pat-bg"
@@ -255,8 +261,8 @@ const ConfirmDetails = () => {
             height={50}
           />
 
-          <BlueCircles className="elipse14" />
-        </div>
+        </div> */}
+        {/* <BlueCircles className="elipse14" /> */}
 
         <div className="card-info-container">
           {!isEditing ? (
@@ -301,7 +307,7 @@ const ConfirmDetails = () => {
             <div>
               <div className="status-text">Marital Status</div>
             </div>
-            <BlueCircles className="elipse20" />
+            {/* <BlueCircles className="elipse20" /> */}
             <div className="items">
               {status.map((item, index) => {
                 return (
@@ -367,14 +373,14 @@ const ConfirmDetails = () => {
           </div>
 
           <div className="details-inputs-container">
-            <div className="details-image-bg">
+            {/* <div className="details-image-bg">
               <Image
                 src="/assets/whole-pat.svg"
                 alt="pat-bg"
                 width={400}
                 height={157}
               />
-            </div>
+            </div> */}
 
             <div className="field-select-inputs">
               <div className="details-inputs">
@@ -437,9 +443,9 @@ const ConfirmDetails = () => {
                 <BlueCircles className="elipse15" />
                 <BlueCircles className="elipse16" />
                 <BlueCircles className="elipse17" />
-                <Select
+                {/* <Select
                   title={regionSelect.selectTitle}
-                  options={regionSelect.options}
+                  // options={regionSelect.options}
                   {...register("region", {
                     required: "Region is required",
                   })}
@@ -447,11 +453,12 @@ const ConfirmDetails = () => {
                   errors={errors}
                   id="region"
                   required
-                  defaultValue={info.region}
+                  // defaultValue={info.region}
+                  className="details-select"
                 />
                 <Select
                   title={paymentSelect.selectTitle}
-                  options={paymentSelect.options}
+                  // options={paymentSelect.options}
                   {...register("payment", {
                     required: "Payment is required",
                   })}
@@ -459,11 +466,12 @@ const ConfirmDetails = () => {
                   id="payment"
                   placeholder="Select Payment"
                   required
-                  defaultValue={info.payment}
+                  // defaultValue={info.payment}
+                  className="details-select"
                 />
                 <Select
                   title={coverSelect.selectTitle}
-                  options={coverSelect.options}
+                  // options={coverSelect.options}
                   {...register("cover", {
                     required: "Cover is required",
                   })}
@@ -471,8 +479,9 @@ const ConfirmDetails = () => {
                   id="cover"
                   placeholder="Select Cover"
                   required
-                  defaultValue={info.cover}
-                />
+                  // defaultValue={info.cover}
+                  className="details-select"
+                /> */}
               </div>
             </div>
           </div>

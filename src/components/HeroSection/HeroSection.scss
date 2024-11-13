@@ -10,9 +10,9 @@
     .elipse2 {
       position: absolute;
       z-index: 0;
-      max-width: 234px;
-      min-height: 220px;
-      margin-left: -113px;
+      max-width: 130px;
+      margin-left: -79px;
+      min-height: 167px;
 
       img {
         width: 100%;
@@ -25,13 +25,13 @@
 
       .paragraph-container {
         .scheme-text {
-          font-size: 28px;
+          font-size: 25px;
+          max-width: 1027px;
+          margin: 0 auto;
           text-align: center;
           font-weight: 600;
           color: #000;
-          max-width: 1110px;
-          margin: 0 auto;
-          padding: 10px 0 15px;
+          padding: 20px 0 25px;
 
           span {
             color: #00c2ff;
@@ -40,7 +40,7 @@
       }
 
       .second-section-hero {
-        max-width: 970px;
+        max-width: 890px;
         margin: 0 auto;
         position: relative;
         z-index: 1;
@@ -54,7 +54,7 @@
             height: 310px;
             object-fit: cover;
             object-position: 0 -80px;
-            border-radius: 49px;
+            border-radius: 27px;
           }
 
           .hero-card-cont {
@@ -63,24 +63,30 @@
             margin-bottom: 22px;
 
             .hero-card {
+              max-width: 700px;
               margin-top: -28px;
               padding-left: 20px;
 
               .hero-text {
-                max-width: 700px;
-                min-height: 60px;
-                background: #4ccef7;
+                width: 100%;
+                background: #00c2ff;
                 font-size: 19px;
                 font-weight: 600;
                 color: #fff;
-                padding: 20px;
                 border-radius: 29px;
                 margin-bottom: 25px;
+                max-height: 56px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 22px;
               }
 
               .steps-text {
                 font-size: 19px;
                 font-weight: 600;
+                width: 100%;
                 // padding-top: 21px;
                 color: #000;
                 margin-bottom: 30px;
@@ -89,23 +95,27 @@
             }
 
             .hero-btn-cont {
-              flex: 0 0 215px;
+              flex: 0 0 310px;
               padding: 48px 0 0 32px;
               z-index: 1;
 
               a {
+                max-width: 258px;
+                max-height: 50px;
                 display: flex;
-                width: 258px;
-                height: 50px;
-                font-size: 19px;
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
                 font-weight: 600;
                 justify-content: center;
                 align-items: center;
-                background: #4ccef7;
+                background: #00c2ff;
                 border-radius: 29px;
                 color: #fff;
                 padding: 6.5px 15px;
                 position: relative;
+                text-decoration: none;
+                text-transform: uppercase;
 
                 &:hover {
                   border: 2px solid #ffed51;
@@ -150,7 +160,6 @@
     .hero-container-list {
       max-width: 608px;
       margin-left: 60px;
-      margin-top: -70px;
 
       .hero-list-heading {
         font-size: 25px;
@@ -162,10 +171,10 @@
       }
 
       .hero-list-paragraph {
-        margin-bottom: 25px;
-        font-size: 20px;
-        color: #4ccef7;
+        margin-bottom: 30px;
         font-weight: 500;
+        font-size: 20px;
+        color: #00c2ff;
       }
       .list-item-container {
         padding-left: 18px;
@@ -182,8 +191,8 @@
     .ellipse6 {
       position: absolute;
       margin-bottom: -344px;
-      margin-left: -85px;
-      max-width: 161px;
+      margin-left: -153px;
+      max-width: 151px;
       z-index: 2;
 
       img {
@@ -202,10 +211,9 @@
       .elipse4 {
         position: absolute;
         z-index: 0;
-        margin-left: 336px;
-        max-width: 280px;
-        right: 0;
-        top: 114px;
+        max-width: 335px;
+        right: -62px;
+        top: 88px;
 
         img {
           width: 100%;
@@ -221,8 +229,9 @@
         overflow: hidden;
 
         .tortoise-img {
+          width: 100%;
+          margin-bottom: 26px;
           margin-top: -155px;
-          width: auto;
           height: 745px;
           object-fit: contain;
           object-position: bottom;
@@ -244,15 +253,15 @@
 
   .page-second-section {
     background: #fff;
-    padding: 60px 0 0;
+    padding: 10px 0 0;
     margin-bottom: -53px;
     top: -82px;
     position: relative;
     z-index: 1;
 
     .features-title {
-      font-size: 28px;
-      text-align: center;
+      font-size: 25px;
+      text-align: center !important;
       font-weight: 600;
       margin-bottom: 68px;
       padding-bottom: 45px;
@@ -271,7 +280,7 @@
         flex: 1;
         display: flex;
         justify-content: center;
-        padding-left: 29px;
+        padding-left: 160px;
 
         &::after {
           content: "";
@@ -294,6 +303,8 @@
         }
 
         .elipse5 {
+          max-width: 455px;
+          height: 302px;
           position: absolute;
           z-index: 0;
           margin-left: 0;
@@ -304,12 +315,13 @@
             margin-top: -93px;
           }
           img {
-            width: 530px;
-            height: 495px;
+            width: 100%;
+            height: 100%;
           }
         }
 
         .image-container {
+          max-width: 400px;
           flex: 1;
           display: flex;
           justify-content: center;
@@ -319,7 +331,7 @@
           margin-left: 0;
 
           img {
-            width: 600px;
+            width: 100%;
             object-fit: contain;
             margin-top: -25px;
           }
@@ -327,7 +339,7 @@
       }
 
       .save-list-cont {
-        max-width: 580px;
+        max-width: 660px;
         padding-top: 160px;
         position: relative;
         overflow: hidden;
@@ -344,12 +356,428 @@
           }
         }
 
-        ul {
+        .save-items {
           padding: 0 20px;
-          li {
+          margin-top: -132px;
+
+          .help-item {
             list-style-type: circle;
             margin-bottom: 25px;
             font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 841px) and (max-width: 1280px) {
+    .second-part-cont {
+      .elipse-turtle-cont {
+        .elipse4 {
+          max-width: 200px;
+          right: -73px;
+          top: 117px;
+        }
+
+        .second-part-image {
+          width: 442px;
+          right: -93px;
+          top: -26px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1083px) {
+    .second-part-cont {
+      .hero-container-list {
+        .hero-items {
+          padding-bottom: 30px;
+        }
+      }
+    }
+
+    .page-second-section {
+      .elipse-image-container {
+        padding-left: 48px;
+
+        .elipse-container {
+          top: -30px;
+        }
+
+        .image-container {
+          top: -11px;
+          right: -8px;
+        }
+      }
+    }
+
+    .benefits-section-container {
+      .burial-text {
+        padding-left: 65px;
+      }
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .first-hero-section {
+      .paragraph-container {
+        max-width: 700px;
+        margin: 0 auto;
+        .scheme-text {
+          font-size: 24px;
+        }
+      }
+
+      .second-section-hero {
+        padding: 10px 30px;
+      }
+    }
+
+    .second-part-cont {
+      padding: 30px;
+      position: static;
+
+      .hero-container-list {
+        margin-left: 0;
+        margin-top: 0;
+
+        .hero-container-heading {
+          padding-top: 20px;
+          padding-left: 29px;
+        }
+
+        .hero-list-paragraph {
+          padding-left: 29px;
+        }
+
+        .hero-items {
+          margin-left: 53px;
+        }
+      }
+
+      .ellipse6 {
+        display: none;
+      }
+
+      .elipse-turtle-cont {
+        .elipse4 {
+          max-width: 200px;
+          right: -123px;
+          top: -20px;
+        }
+
+        .second-part-image {
+          display: none;
+        }
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .page-second-section {
+      top: 0;
+      padding: 30px;
+
+      .features-title {
+        padding-top: 20px;
+        text-align: left;
+        padding-left: 30px;
+        padding-bottom: 0;
+        margin-bottom: 86px;
+      }
+      .feature-container {
+        .elipse-image-container {
+          padding-left: 0;
+          flex: 0 0 258px;
+
+          .elipse5 {
+            max-width: 252px;
+            bottom: 38px;
+            left: -25px;
+
+            img {
+            }
+          }
+
+          .image-container {
+            bottom: 15px;
+            left: -16px;
+          }
+          &::after {
+            display: none;
+          }
+        }
+
+        .save-list-cont {
+          .elipse7 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 841px) and (max-width: 950px) {
+    .first-section-container {
+      .first-hero-section {
+        padding: 0 30px;
+
+        .second-section-hero {
+          .secimage-list-cont {
+            .hero-card-cont {
+              .hero-card {
+                .hero-text {
+                  font-size: 16px;
+                }
+                .steps-text {
+                  font-size: 16px;
+                }
+              }
+              .hero-btn-cont {
+                a {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 745px) {
+    .first-section-container {
+      .elipse2 {
+        max-width: 100px;
+      }
+
+      .first-hero-section {
+        .paragraph-container {
+          .scheme-text {
+            font-size: 18px;
+            padding: 0 20px;
+          }
+        }
+
+        .second-section-hero {
+          .secimage-list-cont {
+            img {
+              max-height: 200px !important;
+              object-fit: cover !important;
+              object-position: bottom !important;
+              height: 100%;
+              border-radius: 10px;
+            }
+
+            .hero-card-cont {
+              display: flex;
+              flex-direction: column;
+              row-gap: 20px;
+
+              .hero-card {
+                .hero-text {
+                  font-size: 15px !important;
+                  min-height: 33px !important;
+                  margin-top: -7px !important;
+                  margin-left: -12px;
+                }
+
+                .steps-text {
+                  margin-left: 0;
+                  font-size: 15px;
+                  margin-top: -10px;
+                  margin-bottom: 20px;
+                  text-align: center;
+                }
+              }
+
+              .hero-btn-cont {
+                flex: 1;
+                padding: 0;
+                margin: 0 auto;
+
+                .btn {
+                  max-width: 300px;
+                  min-height: 40px;
+                  font-size: 12px;
+                  margin-top: -18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .second-part-cont {
+      position: relative;
+      .hero-container-list {
+        max-width: 100%;
+
+        .hero-list-heading {
+          font-size: 21px;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .hero-list-paragraph {
+          font-size: 16px;
+          text-align: left;
+          padding-left: 6px;
+        }
+
+        .hero-items {
+          margin-left: 15px;
+
+          .help-item {
+            .help-label {
+            }
+            .item {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .ellipse6,
+      .elipse-turtle-cont {
+        display: none;
+      }
+    }
+
+    .page-second-section {
+      .features-title {
+        font-size: 21px;
+        text-align: left;
+        padding-left: 0;
+        margin-bottom: 60px;
+      }
+      .feature-container {
+        .elipse-image-container {
+          display: none;
+        }
+
+        .save-list-cont {
+          .save-items {
+            padding-left: 0;
+            margin-left: 16px;
+
+            .help-item {
+              help-label {
+              }
+              .item {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .benefits-section-container {
+      .why-section {
+        padding-inline: 30px;
+        .burial-text {
+          flex: 0 0 92%;
+          padding-left: 15px;
+
+          .why-heading {
+            font-size: 16px;
+            margin-bottom: 16px;
+          }
+
+          .why-description {
+            font-size: 16px;
+          }
+
+          .list-benefit-cont {
+            padding-left: 0;
+            .help-item {
+              .help-label {
+              }
+
+              .item {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        .burialimage-pat-container {
+          display: none;
+        }
+      }
+
+      .scheme-info-section {
+        padding-bottom: 50px;
+
+        .burial-scheme-heading {
+          font-size: 16px;
+          margin-bottom: 40px;
+        }
+
+        .info-pat-con {
+          padding-inline: 15px;
+          .scheme-items {
+            max-width: 355px !important;
+            margin: 0 auto;
+          }
+
+          .scheme-list {
+            max-width: 300px !important;
+            min-height: 300px !important;
+
+            .scheme-card-title {
+              font-size: 17px !important;
+              height: 80px !important;
+            }
+
+            .benefit-description {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .first-section-container {
+      .elipse12 {
+      }
+
+      .first-hero-section {
+        .paragraph-container {
+          .scheme-text {
+          }
+        }
+
+        .second-section-hero {
+          .secimage-list-cont {
+            img {
+            }
+            .hero-card-cont {
+              .hero-card {
+                .hero-text {
+                  min-height: 56px !important;
+                  height: 0;
+                  padding: 5px 21px;
+                  font-size: 15px;
+                  margin-top: -27px;
+                }
+
+                .steps-text {
+                }
+              }
+
+              .hero-btn-cont {
+                a {
+                  font-size: 14px;
+                  font-weight: 500px;
+                }
+              }
+            }
           }
         }
       }

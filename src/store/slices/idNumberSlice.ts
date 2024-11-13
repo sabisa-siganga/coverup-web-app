@@ -57,6 +57,9 @@ const idNumberSlice = createSlice({
     submitExtraOptions(state, action: PayloadAction<ExtraOptionInterface[]>) {
       state.extraOptions = action.payload;
     },
+    submitDateOfBirth(state, action: PayloadAction<string>) {
+      state.data.dateOfBirth = action.payload;
+    },
   },
 });
 
@@ -66,5 +69,6 @@ export const {
   submitIDFailure,
   submitPolicyDetails,
   submitExtraOptions,
+  submitDateOfBirth,
 } = idNumberSlice.actions;
 export default idNumberSlice.reducer;

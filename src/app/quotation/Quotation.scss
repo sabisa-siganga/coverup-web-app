@@ -23,7 +23,7 @@
     font-weight: 600;
     margin-bottom: 20px;
     span {
-      color: #21a7d1;
+      color: #00c2ff;
     }
   }
 
@@ -46,7 +46,6 @@
     .label-container {
       form {
         display: flex;
-        align-items: center;
         margin-bottom: 40px;
 
         .quote-input {
@@ -58,7 +57,7 @@
           input {
             max-width: 500px;
             height: 100%;
-            border: 2px solid #21a7d1;
+            border: 2px solid #00c2ff;
             border-radius: 30.5px 0 0 30.5px;
             border-right: none;
             margin-right: 0;
@@ -77,7 +76,7 @@
         }
         .btn {
           width: 196px;
-          height: 60px;
+          height: 50px;
           border-radius: 30.5px;
           display: flex;
           justify-content: center;
@@ -87,7 +86,7 @@
           border-left: none;
           margin: 0;
           padding: 0;
-          background-color: #21a7d1;
+          background-color: #00c2ff;
           margin-left: -33px;
           text-transform: uppercase;
         }
@@ -101,7 +100,7 @@
         .paragraph1 {
           margin-bottom: 10px;
           span {
-            color: #21a7d1;
+            color: #00c2ff;
           }
         }
 

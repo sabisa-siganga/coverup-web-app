@@ -38,14 +38,14 @@ const HelpSection = () => {
   return (
     <div className="help-container">
       <div className="pat-bg-cont">
-        <div className="help-background-pat">
+        {/* <div className="help-background-pat">
           <Image
             src="/assets/help-pat-bg.svg"
             width={100}
             height={100}
             alt="pat"
           />
-        </div>
+        </div> */}
         <div className="help-image-container">
           <Image src="/help/help.svg" width={100} height={100} alt="help" />
         </div>
@@ -55,8 +55,7 @@ const HelpSection = () => {
         <ListItemsSection list={data} itemsStyle="list-help-cont" />
       </div>
 
-      {/* <BlueCircles className="elipse9" /> */}
-      {/* <BlueCircles className="elipse8" /> */}
+      <BlueCircles className="elipse9" />
     </div>
   );
 };

@@ -1,13 +1,14 @@
 .benefits-card-container {
   max-width: 193px;
   min-height: 475px;
-  // box-shadow: 1px 1px 5px rgb(233, 233, 233);
+  box-shadow: 1px 1px 5px rgb(149 140 140);
 
   .benefit-image {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+
     img {
       width: 68px;
       height: 68px;
@@ -18,15 +19,17 @@
 
   .benefit-scheme-title {
     font-size: 19px;
-    padding: 10px 10px;
+    padding: 10px 11px;
     font-weight: 500;
-    color: #4ccef7;
-    height: 50px;
+    color: #00c2ff;
+    height: 80px;
+    text-align: center;
   }
 
   .benefit-description {
-    font-size: 14px;
+    font-size: 18px;
     padding: 0 15px 15px;
-    font-weight: 200;
+    letter-spacing: 0.2px;
+    font-weight: 400;
   }
 }

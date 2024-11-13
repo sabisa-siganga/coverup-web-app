@@ -14,9 +14,9 @@ export async function GET(req: NextRequest) {
 
     // Mock data
     const result = {
-      fullName: "Mary Douglas",
+      fullName: "",
       idNumber,
-      dateOfBirth: "1995-08-01",
+      dateOfBirth: "",
     };
 
     return NextResponse.json(result, { status: 200 });

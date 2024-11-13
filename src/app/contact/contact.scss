@@ -1,9 +1,11 @@
 .contact-container {
   width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  padding: 30px;
+  overflow: hidden;
+  padding-left: 120px;
 
   .contact-title {
     font-size: 28px;
@@ -18,7 +20,7 @@
   }
 
   .circle1 {
-    top: -10px;
+    top: 5px;
     left: -240px;
     max-width: 200px;
 
@@ -30,7 +32,7 @@
   .inputfields-container {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 54px;
 
     .top-inputs-container {
       display: flex;
@@ -38,17 +40,19 @@
       column-gap: 50px;
       max-width: 600px;
       width: 100%;
+      flex-wrap: wrap;
 
-      .first-3-inputs,
-      .second-2-inputs {
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
-        max-width: 300px;
-        width: 100%;
+      > .field {
+        flex: 0 0 45.8%;
       }
 
       .message {
+        width: 100%;
+
+        .input-error-cont {
+          max-width: 100%;
+        }
+
         .field {
           max-width: 600px;
           max-height: 55px;
@@ -56,9 +60,61 @@
       }
     }
 
+    .query-select {
+      width: 100%;
+      margin-bottom: 30px;
+
+      .input-error-cont {
+        max-width: 100%;
+
+        .react-select-container {
+          max-width: 100%;
+
+          .react-select__control {
+            border-width: 2px !important;
+            padding: 3px 1px;
+            outline: none !important;
+
+            &:hover {
+              border-color: #00c2ff;
+            }
+          }
+        }
+      }
+      .select-item {
+        border: none;
+        margin-bottom: 0;
+        padding: 0;
+      }
+
+      p {
+        color: #da0530;
+        margin: 16px 0;
+        font-weight: 400;
+        font-size: 14px;
+        height: 30px;
+      }
+
+      select-item {
+        color: #000;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+        font-size: 16px !important;
+        border: none !important;
+      }
+    }
+
     .field {
       max-width: 600px;
       max-height: 55px;
+
+      p {
+        color: #da0530;
+        padding: 2px 20px 0;
+        font-size: 14px;
+        font-weight: 400;
+        height: 30px;
+      }
 
       input {
         border: 2px solid #00c2ff;
@@ -68,7 +124,6 @@
         padding: 10px 23px;
         font-size: 16px;
         font-weight: 500;
-        text-transform: uppercase;
       }
     }
   }
@@ -76,7 +131,7 @@
   .turtle {
     position: absolute;
     z-index: 1;
-    right: -174px;
+    right: 0;
     bottom: 0;
     max-width: 310px;
 
@@ -89,7 +144,7 @@
     max-width: 370px;
     position: absolute;
     z-index: 0;
-    right: -180px;
+    right: -92px;
     bottom: -3px;
 
     img {
@@ -98,13 +153,14 @@
   }
 
   .contact-btn {
-    padding: 40px 0;
+    padding: 30px 0 40px;
     max-width: 200px;
 
     button {
       font-size: 20px;
       font-weight: 500;
       width: 100%;
+      text-transform: uppercase;
     }
   }
 
@@ -115,6 +171,115 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 1130px) {
+    .turtle {
+      right: -12px;
+      max-width: 260px;
+    }
+
+    .circle2 {
+      right: -130px;
+      bottom: 24px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    .turtle,
+    .circle2 {
+      display: none;
+    }
+
+    .contact-btn {
+      max-width: 270px;
+      margin: 0 auto;
+
+      .btn {
+        max-width: 100%;
+        width: 100% !important;
+      }
+    }
+
+    .circle3 {
+      bottom: -157px;
+    }
+
+    .field {
+      flex: none !important;
+      width: 100% !important;
+
+      .input-error-cont {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 670px) {
+    .contact-title {
+      font-size: 24px;
+    }
+
+    .contact-description {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .inputfields-container {
+      row-gap: 8px !important;
+      align-items: center;
+      max-width: 500px;
+      margin: 0 auto;
+
+      .top-inputs-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 26px;
+        align-items: center;
+
+        .field {
+          margin-bottom: 0 !important;
+        }
+
+        .query-select {
+          padding: 7.1px 17px;
+          margin-bottom: 0;
+          max-width: 500px;
+
+          select {
+            width: 100%;
+          }
+        }
+      }
+
+      .message {
+        padding-bottom: 38px;
+        width: 100%;
+      }
+
+      .input-error-cont {
+        max-width: 100% !important;
+        input {
+          width: 100%;
+        }
+      }
+    }
+
+    .circle2,
+    .circle3 {
+      display: none;
+    }
+
+    .contact-btn {
+      max-width: 250px;
+      padding: 0;
+      margin: 0 auto 20px;
     }
   }
 }

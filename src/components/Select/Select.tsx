@@ -1,30 +1,40 @@
-import React, { forwardRef } from "react";
-import "./Select.scss";
-import { FieldErrors } from "react-hook-form";
+"use client";
 
+import React, { forwardRef, useEffect } from "react";
+import Select from "react-select"; // Import react-select component
+import "./Select.scss";
+import { Control, Controller, FieldErrors } from "react-hook-form";
+
+export interface SelectOption {
+  label: string;
+  value: string;
+}
+
+// Define the SelectProps interface for the props the component will receive
 interface SelectProps {
-  title: string;
-  options: {
-    value: string;
-  }[];
+  title?: string;
+  options: SelectOption[];
   errors?: FieldErrors;
   name?: string;
   id?: string;
   placeholder?: string;
   required?: boolean;
-  onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-  onBlur?: (e: React.FocusEvent<HTMLSelectElement>) => void;
-  defaultValue?: string;
+  onChange?: (option: any) => void; // Updated type for react-select's onChange
+  // onBlur?: () => void;
+  defaultValue?: SelectOption | SelectOption[];
+  className?: string;
+  showText?: boolean;
+  isMulti?: boolean; // For multi-select functionality
+  control?: Control<any, any>;
+  // setValue?: (name: string, value: any) => void; // React Hook Form's setValue
 }
 
-const Select = (
-  props: SelectProps,
-  ref: React.ForwardedRef<HTMLSelectElement>
-) => {
+// ForwardRef is still used to support refs passed by parent components
+const SelectField = forwardRef<any, SelectProps>((props, ref) => {
   const {
     title,
     options,
-    onBlur,
+    // onBlur,
     onChange,
     errors,
     name,
@@ -32,43 +42,89 @@ const Select = (
     placeholder,
     required,
     defaultValue,
+    className,
+    showText = false,
+    isMulti = false, // Allow multiple selections
+    control,
+    // setValue, // Set value programmatically
   } = props;
+
+  // Get error message if validation fails
   const error = errors && name && errors[name];
 
+  // useEffect(() => {
+  //   if (defaultValue && setValue && name) {
+  //     // If defaultValue exists, set it for the field using setValue
+  //     setValue(name, defaultValue);
+  //   }
+  // }, [defaultValue, setValue, name]);
+
   return (
-    <div className="select-container">
-      <label htmlFor={id} className="select-input">
-        {title}
-      </label>
-      <select
-        id={id}
-        className={`select-item ${error ? "error" : ""}`}
-        ref={ref}
-        name={name}
-        onChange={onChange}
-        onBlur={onBlur}
-        defaultValue={defaultValue}
-      >
-        {placeholder && (
-          <option value="" className="select-list-item">
-            {placeholder}
-          </option>
+    <div className={`select-container ${className}`}>
+      {title && (
+        <label htmlFor={id} className="select-input">
+          {title}
+        </label>
+      )}
+      <div className="input-error-cont">
+        {!showText && control && (
+          <Controller
+            name={name || "select"}
+            control={control}
+            defaultValue={defaultValue}
+            render={({ field }) => {
+              return (
+                <Select
+                  {...field}
+                  id={id}
+                  // defaultMenuIsOpen
+                  className={`react-select-container ${error ? "error" : ""}`}
+                  classNamePrefix="react-select"
+                  options={options} // Set options for react-select
+                  isMulti={isMulti} // Enable multi-select if needed
+                  placeholder={placeholder || "Select..."} // Placeholder text
+                  // onBlur={onBlur} // Handle blur events
+                  onChange={(selected) => {
+                    field.onChange(selected);
+                    console.log(selected);
+                  }}
+                />
+              );
+            }}
+          />
         )}
 
-        {options.map((item, index) => {
-          return (
-            <option key={index} value={item.value} className="select-list-item">
-              {item.value}
-            </option>
-          );
-        })}
-      </select>
+        {!showText && !control && (
+          <Select
+            id={id}
+            // defaultMenuIsOpen
+            className={`react-select-container ${error ? "error" : ""}`}
+            classNamePrefix="react-select"
+            ref={ref}
+            name={name}
+            options={options} // Set options for react-select
+            defaultValue={defaultValue} // Set the default selected value
+            isMulti={isMulti} // Enable multi-select if needed
+            onChange={onChange} // Handle change events
+            placeholder={placeholder || "Select..."} // Placeholder text
+            // onBlur={onBlur} // Handle blur events
+          />
+        )}
 
-      {error && <p className="error-message">{error.message?.toString()}</p>}
+        {showText && defaultValue && (
+          <div>
+            {Array.isArray(defaultValue)
+              ? defaultValue.map((v) => v.label).join(", ")
+              : defaultValue.label}
+          </div>
+        )}
+
+        {error && <p className="error-message">{error.message?.toString()}</p>}
+      </div>
     </div>
   );
-};
+});
 
-const SelectField = forwardRef(Select);
+SelectField.displayName = "SelectField";
 
 export default SelectField;

@@ -1,0 +1,33 @@
+.select-container {
+  .input-error-cont {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.react-select-container {
+  width: 100%;
+  max-width: 400px;
+
+  .react-select__control {
+    border-radius: 27px;
+    border: 1px solid #00c2ff !important;
+    width: 100%;
+    min-height: 43px !important;
+  }
+
+  .react-select__value-container {
+    padding: 2px 20px;
+  }
+
+  .react-select__indicator {
+    svg {
+      color: #00c2ff;
+    }
+  }
+
+  .react-select__option {
+    font-size: 16px;
+  }
+}

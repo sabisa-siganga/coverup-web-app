@@ -20,7 +20,7 @@ const BenefitsCard = (props: Props) => {
           <Image src={image} width={100} height={50} alt="benefit-image" />
         </div>
       )}
-      <div className={` ${titleStyle}`}>{title}</div>
+      <div className={`benefit-title ${titleStyle}`}>{title}</div>
       <div className="benefit-description">{description}</div>
     </div>
   );

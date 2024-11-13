@@ -1,0 +1,207 @@
+.manage-users-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  .admin-profile-container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: -194px;
+
+    .admin-icon-cont {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .admin {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+      margin-bottom: -17px;
+
+      .user-role,
+      .admin-name {
+        font-size: 17px;
+        font-weight: 600;
+        color: #929591;
+      }
+    }
+  }
+
+  .title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 5px;
+  }
+
+  .search-filter-cont {
+    max-width: 540px;
+    margin: 0 auto 50px;
+
+    .inner-container {
+      display: flex;
+      align-items: center;
+      column-gap: 30px;
+
+      .search-container {
+        display: flex;
+        max-height: 43px;
+        flex: 1;
+
+        .search-field-cont {
+          margin-bottom: 0;
+          .input-error-cont {
+            height: 100%;
+          }
+          input {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+            margin-bottom: 0;
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        button {
+          height: 43px;
+          margin-left: -60px;
+          max-width: 143px !important;
+          width: 100%;
+        }
+      }
+
+      .filter {
+        font-size: 20px;
+        font-weight: 500;
+        color: #00c2ff;
+      }
+    }
+  }
+
+  .admin-elipse1 {
+    left: -289px;
+    max-width: 200px;
+    top: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .admin-elipse2 {
+    right: -318px;
+    max-width: 165px;
+    bottom: 248px;
+
+    img {
+      width: 100%;
+    }
+  }
+  .admin-elipse3 {
+    left: -237px;
+    max-width: 120px;
+    bottom: -110px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .table-container {
+    background: #dbdbdb;
+    border-radius: 27px;
+    padding: 25px 40px 40px;
+    margin-bottom: 50px;
+
+    .table-headings {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 29px 15px;
+      display: grid;
+      grid-template-columns: 0.7fr 0.75fr 0.5fr 100px;
+
+      .heading {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+        text-transform: uppercase;
+      }
+    }
+
+    .user-info-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
+      background: #fff;
+      border: 1px solid #000;
+      border-radius: 27px;
+      padding: 25px 30px;
+
+      .user-info {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #929591;
+        padding-bottom: 18px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 0.7fr 0.75fr 0.5fr 100px;
+
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+
+        .user {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          max-width: 160px;
+          width: 100%;
+          font-size: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #929591;
+        }
+
+        .registration-date {
+          font-size: 17px;
+          font-weight: 600;
+          color: #929591;
+        }
+
+        .edit-user {
+          font-size: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #929591;
+        }
+
+        .user-status {
+          width: 30px;
+          height: 30px;
+          border: none;
+          border-radius: 50px;
+          margin-left: 15px;
+        }
+        .approved {
+          background: #008000;
+        }
+        .not-approved {
+          background: #ff0000;
+        }
+        .pending {
+          background: #ffff00;
+        }
+      }
+    }
+  }
+}

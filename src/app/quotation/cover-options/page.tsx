@@ -15,40 +15,15 @@ import { RootState } from "@/store/store";
 import { useSelector } from "react-redux";
 import axios from "axios";
 
-const policyList = [
-  {
-    name: "Old Mutual",
-    image: "/policies/oldmutual.png",
-    monthlyPay: "R100 - R199",
-    claim: "R5 000 per claim",
-    option: "Basic Cover",
-    color: "green",
-  },
-  {
-    name: "Clientel",
-    image: "/policies/clientele.png",
-    monthlyPay: "R200 - R299",
-    claim: "R10 000 per claim",
-    option: "Standard Cover",
-    color: "blue",
-  },
-  {
-    name: "Avbob",
-    image: "/policies/avbob.png",
-    monthlyPay: "R300 - R399",
-    claim: "R15 000 per claim",
-    option: "Family Cover",
-    color: "lime",
-  },
-  {
-    name: "Assupol",
-    image: "/policies/assupol.png",
-    monthlyPay: "R400+",
-    claim: "R20 000 per claim",
-    option: "Premium Cover",
-    color: "red",
-  },
-];
+interface PolicyDetails {
+  name: string;
+  image: string;
+  monthlyPay: string;
+  claim: string;
+  option: string;
+  description: string;
+  benefits: string;
+}
 
 const CoverOptionsPage = () => {
   const router = useRouter();
@@ -58,7 +33,8 @@ const CoverOptionsPage = () => {
 
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [coverOption, setCoverOption] = useState<string>("");
-  const [filteredPolicies, setFilteredPolicies] = useState(policyList);
+  const [filteredPolicies, setFilteredPolicies] = useState<PolicyDetails[]>([]);
+  const [policyList, setPolicyList] = useState<PolicyDetails[]>([]);
 
   // Fetch policies based on payment range, search term, and cover option
   const fetchPolicies = async (range: string, term: string, option: string) => {
@@ -94,6 +70,7 @@ const CoverOptionsPage = () => {
         (option ? policy.option.toLowerCase() === option.toLowerCase() : true)
     );
     setFilteredPolicies(filtered);
+    setPolicyList(filtered);
   };
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -121,21 +98,21 @@ const CoverOptionsPage = () => {
     fetchPolicies(paymentRange, searchTerm, coverOption);
   };
 
-  // Navigate to policy details page
-  const selectPolicy = () => {
-    router.push("/quotation/policy-details");
-  };
-
   return (
     <div className="cover-container">
-      <ContainerWrapper className="cover-header-container">
-        <div className="cover-title">Cover Options</div>
-        <p>Here are cover options that work best for you</p>
-      </ContainerWrapper>
-
       <ProgressBar currentStep={5} className="cover-step-no" />
 
       <div className="options-filter-container">
+        <div className="cover-bg-cont">
+          <Image
+            src="/cover-options/cover-bg-img.jpg"
+            width={900}
+            height={50}
+            alt="cover-bg"
+            className="cover-bg"
+          />
+        </div>
+
         <div className="search-container">
           <InputField
             name="search"
@@ -152,32 +129,20 @@ const CoverOptionsPage = () => {
 
         <div className="policy-cards-container">
           {filteredPolicies.length === 0 ? (
-            <p className="no-match">No matching policies</p>
+            <p className="no-match">Oops! No matching policies</p>
           ) : (
             filteredPolicies.map((item, index) => {
               return (
                 <CardPolicy
                   key={index}
-                  className={item.color}
-                  onClick={selectPolicy}
-                >
-                  <div className="single-card grid grid-cols-2 items-center border rounded-lg shadow-md">
-                    <div className="flex justify-center">
-                      <Image
-                        src={item.image}
-                        width={50}
-                        height={50}
-                        alt="policy"
-                        className="w-12 h-12"
-                      />
-                    </div>
-                    <div className="list-text flex flex-col text-left">
-                      <div>{item.monthlyPay}aaa</div>
-                      <div>{item.claim}</div>
-                      <div>{item.option}</div>
-                    </div>
-                  </div>
-                </CardPolicy>
+                  className="card"
+                  // monthlyPay={item.monthlyPay}
+                  // claim={item.claim}
+                  option={item.option}
+                  image={item.image}
+                  description={item.description}
+                  benefits={item.benefits}
+                />
               );
             })
           )}

@@ -23,7 +23,6 @@ let users: User[] = [
     cover: "Cover1",
     status: "",
   },
-  // Add more users as needed
 ];
 
 export async function POST(req: NextRequest) {
