@@ -96,4 +96,4 @@ JWT_SECRET=<your-secret-key-for-jwt>
    The app should now be running on http://localhost:3000.
 
 **Deployed Version**
-The application is currently deployed and available for live testing on AWS. You can access the deployed version here: https://www.coverupquotes.co.za/
+The application is currently deployed and available for live testing on CodeSandbox. You can access the deployed version here: https://whzlrh-3000.csb.app/
